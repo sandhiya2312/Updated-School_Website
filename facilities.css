@@ -1,0 +1,82 @@
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      body {
+        background-color: #f9f9f9;
+        color: #333;
+      }
+
+      .navbar {
+        background: #ae43ff;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+      }
+
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 20px;
+        font-weight: 500;
+      }
+
+      .facility-section {
+        padding: 50px 20px;
+        max-width: 1100px;
+        margin: auto;
+      }
+
+      .facility-section h1 {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 40px;
+        color: #222;
+      }
+
+      .facility-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .facility-content img {
+        width: 48%;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .facility-text {
+        width: 48%;
+        font-size: 18px;
+        line-height: 1.7;
+        text-align: justify;
+      }
+
+      .footer {
+        background: #333;
+        color: #ccc;
+        padding: 20px;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      @media (max-width: 768px) {
+        .facility-content {
+          flex-direction: column;
+        }
+
+        .facility-content img,
+        .facility-text {
+          width: 100%;
+        }
+      }
